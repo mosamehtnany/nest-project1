@@ -1,0 +1,37 @@
+body{background: rgb(148, 201, 117);}
+h1{text-align: center;
+color: red;
+font-style: italic;}
+SECTION{background: rgb(72, 179, 188);color: whitesmoke;margin: auto;padding: 10PX;
+display: flex;
+flex-direction: row;
+justify-content: CENTER;
+align-items: center;
+flex-wrap: wrap;
+gap: 50PX;
+transition: 0.5S;
+}
+SECTION DIV{width: 50PX;height: 30PX;
+    background: BLACK;margin: 10PX;text-align: center;cursor: pointer;}
+
+SECTION DIV:hover{
+    background-color: BLUE;
+    translate: -10PX;
+}
+.white{background: white;
+width: 500px;
+height: 40px;margin: 1px;
+}
+.red{background: red;
+width: 500px;
+height: 40px;margin: 1px;
+}
+.black{background: black;
+width: 500px;
+height: 40px;margin: 1px;
+}
+img{width: 40px;
+height: 40px;margin: auto;}
+/* #one div:hover{background: black;
+border-radius: 100%;} */
+

@@ -1,0 +1,11 @@
+body{background-color: rgb(179, 178, 178);}
+.one {background-color: rgb(215, 212, 212);width: 2000px;height: 200px;display: inline-block;border:black 5px dashed;border-radius: 20px;}
+.one img {width: 90px;height: 90px;border-radius: 800px;margin-top: 10px;display: inline-block;}
+.one h1{text-align: center;text-decoration: underline;text-transform: uppercase;
+color: rgb(0, 120, 224);font-size: 40px;
+font-style: italic;display: inline;
+}
+.two p {font-size: 30px;font-family: Georgia, 'Times New Roman', Times, serif;color: brown;
+}
+
+

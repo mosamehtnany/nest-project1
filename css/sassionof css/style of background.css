@@ -1,0 +1,5 @@
+.image{width: 300px;height: 300px;background: radial-gradient(rgb(0, 0, 0),#0be044,#000,#ffffff,#775b5b57);
+margin:100px auto;border:rgb(27, 29, 25) dashed 10px;border-radius:20% 50%;} 
+h1{color:blueviolet;}
+.text{width: 200px;text-align:center;
+background:gold;margin: 50% auto;text-decoration: ;}

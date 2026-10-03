@@ -1,0 +1,242 @@
+.mobile-overlay{display: none;}
+ nav > input{display: none;
+    }
+    input{display: none;}
+@media (max-width:1400px) {
+   header> img,header .card-img {display: none;}    
+   .popular-dishes .container{display: grid;
+   grid-template-columns: repeat(3,1fr);
+   row-gap:50px;
+   }
+   .special  .offer> img{display: none;}
+}
+
+@media (max-width:1200px) { 
+
+    .best-food .container-1 {display: grid;
+    grid-template-columns: repeat(3,1fr);
+.our-chef >img{display: none;}
+.our-chef .container{grid-template-columns: repeat(2, 1fr);
+row-gap: 30px;}
+row-gap:120px;}
+.about-us{display: flex;
+justify-content: center;
+align-items: center;
+margin: 8% auto;
+padding: 100px 8% ;
+width: 80vw
+;}
+.back-ground>img{display: none;}
+.about-us > img ,.popular-dishes>img{display: none;}
+.about-us .left-img,.about-us .right-img{display: none;}
+    
+    header .data h1{font-size: 80px;}
+    nav{background: var(--white-color);}
+    nav>input:checked~ .mobile-overlay{
+        opacity: 1;
+        visibility: visible;
+        
+    }
+    nav>input:checked~ .mobile-overlay .mobile-menu{right:0px}
+::-webkit-scrollbar{width: 0;
+height: 0;}
+nav>input{display: none;}
+.circle{
+    border-radius : 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    nav .nav-bar .top-nav ,nav .nav-bar .down-nav ul{
+        display: none;
+    }
+    .mobile-overlay{display: block;
+    position: fixed;
+width: 100vw;
+height: 100vh;
+z-index: 20;
+background: rgba(0, 0, 0, 0.621);
+opacity: 0;
+visibility: hidden;
+transition: 0.5s;
+
+
+}
+    .mobile-menu {
+        position: absolute;
+        bottom: 0;
+        right: -400px;
+        background: var(--white-color);
+        width: 400px;
+        height: 100%;
+        color: var(--secondry-color);
+        border-left: 2px solid red;
+padding: 30px 20px;
+display: flex;
+flex-direction: column;
+gap: 35px;
+overflow-y: scroll;
+transition: 0.5s;
+    }
+    .mobile-menu  .top-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mobile-menu  .top-menu img{
+
+    }
+    .mobile-menu  .top-menu .close-menu{
+        background: var(--main-color);
+        color: var(--white-color);
+        transition: 0.5s;
+    }
+    .mobile-menu  .top-menu .close-menu:hover{
+        transform: rotate(360deg) scale(1.25);
+        background: var(--main-color);
+        box-shadow: 0 0 5px var(--main-color);
+    }
+    .mobile-menu .links-container .links-group a{
+        color: var(--secondry-color);
+        text-decoration: none;
+        padding: 15px 0;
+        font-family: var(--body-semibold);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.227);
+
+    }
+    .mobile-menu  .contact-info{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .mobile-menu  .contact-info  b{
+        font-family: var(--heading-bold);
+        font-size: 18px;
+    }
+    .mobile-menu  .contact-info  .info-container{
+       
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .mobile-menu  .contact-info  .info-container div{
+display: flex;
+gap: 10px;
+    }
+    .mobile-menu  .contact-info  .info-container div i{
+        color: var(--main-color);
+    }
+    .mobile-menu  .contact-info button{
+        width: 100%;
+        justify-content: center;
+        padding: 20px 15px;
+        height: 100%;
+
+    }
+    .mobile-menu .social {
+        display: flex;
+        gap: 10px;
+    }
+    .mobile-menu .social i{
+        border: 1px solid gray;
+        color: gray;
+        transition: 0.6s;
+    }
+    .mobile-menu .social i:hover{
+    background: var(--main-color);
+    transform: scale(1.2);
+    color: var(--white-color);
+    }
+    .mobile-menu .links-container .links-group .mobile-dropDown{display: none;}
+    .mobile-menu .links-container .links-group .mobile-dropDown a{
+        padding-left: 35px;
+    }
+    nav > input{display: none;
+    visibility: hidden;}
+    .mobile-menu .links-container .links-group input:checked~.mobile-dropDown {display: block;}
+    .plusicon{transition: 0.5s;}
+    .mobile-menu .links-container .links-group input:checked~ a .plusicon{transform: rotate(45deg);}
+    nav .nav-bar .down-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    padding-right: 3%;
+}
+nav .logo{
+    height: 120px;
+}
+.food-menu> img{display: none;}
+.our-chef .container{grid-template-columns: repeat(2, 1fr);
+row-gap: 180px;}
+}
+@media (max-width:992px) {
+    .back-ground>div img{display: none;}
+header .data h1{font-size: 80px;}
+.popular-dishes .container{display: grid;
+   grid-template-columns: repeat(2,1fr);
+   row-gap:50px;}
+   .our-chef >img{display: none;}
+section .sec-heading h2{
+    font-size: 35px;
+}
+ .best-food .container-1 {display: grid;
+    grid-template-columns: repeat(2,1fr);
+row-gap:120px;}
+ .food-menu .menu-container .menu{grid-template-columns: repeat(1,1fr);
+row-gap: 30px;}
+
+.best-food .container-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap:20px;
+
+}
+.test .test-data{display: flex;
+flex-direction: column;
+gap: 30px;}
+.our-chef .container{grid-template-columns: repeat(1, 1fr);
+row-gap: 180px;}
+    
+}
+@media (max-width:768px) {
+    section .sec-heading h2{
+    font-size: 32px;
+}
+    header .data h1{font-size: 70px;}
+
+}
+@media (max-width:564px) {
+    section .sec-heading h2{
+    font-size: 29px;
+}
+.popular-dishes .container{display: grid;
+   grid-template-columns: repeat(1,1fr);
+   row-gap:50px;}
+   .popular-dishes button{
+    width: 30vw;
+font-size: 15px;}
+ .best-food .container-1 {display: grid;
+    grid-template-columns: repeat(1,1fr);
+row-gap:120px;}
+.best-food .container-2{
+    display: grid;
+    grid-template-columns: repeat(1 ,1fr);
+    row-gap:20px;
+}
+    
+header .data h1{font-size: 60px;}
+}
+@media (max-width:350px) {
+header .data h1{font-size: 40px;}
+section .sec-heading h2{
+    font-size: 37px;
+}
+
+
+}

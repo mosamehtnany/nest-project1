@@ -1,0 +1,259 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+.one video{
+position: fixed;
+z-index: -1;
+color: aliceblue;
+margin: 40px 0 0 0;
+width: 100%;
+opacity: 80%;}
+/* section{position: relative;
+/* t/ */
+.two{
+    background:radial-gradient(white,gray,black);
+    /* height: 50px; */
+    width: 2000px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px solid black;
+    position: fixed;
+    transition: 0.5s; 
+    z-index: 2;
+}
+.two div{
+display: inline-block;
+margin: 10px;
+position: relative;
+left: 30%;
+
+}
+a{
+font-style: italic;
+text-decoration: none;
+background: white;
+padding: 10px;
+font-size: 25px;
+border: 2px solid black;
+border-radius: 10px;
+color: black;
+transition: 0.5s;
+}
+a:hover{
+    color: aliceblue;
+    background: black;
+}
+
+.three {min-width: 600px;max-width: 850px; color: rgb(246, 246, 246);padding: 10px;margin:100px auto;position: relative;
+    bottom: 70px;
+}
+.three span{color: white;font-weight: bolder;
+font-size: 50px;display: inline;}
+.three p{font-size: 20px;}
+button{width: 50%;
+    font-size: 20px;
+    background: black;
+    color: aliceblue;
+margin: 30px 0 0 200px;
+border: 0 solid transparent;
+transition: 0.4s;
+cursor: pointer;}
+button:hover{
+    transform: scale(1.5);
+    background: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.photo div{
+    width: 300px;
+    display: inline-block;
+    margin: 70px;
+    position: relative;
+    left: 50px;
+   position: relative;
+   border-radius: 2px;
+   /* z-index: -1; */
+   transition: 0.5s;
+   
+}
+.photo div:hover img{
+    border-radius: 100px 100px 0 0;
+    
+}
+.photo p{display: inline-block;
+    color: aliceblue;
+    position: absolute;
+    left: 0px;
+top: 340px;
+width: 5px;
+background: radial-gradient(transparent,grey);
+border: 2px solid white;
+padding: 10px;
+z-index: -1;
+
+box-shadow: 3 3 10 20 rgb(248, 248, 248) ;
+transition: 0.5s;}
+
+.photo div:hover p{
+    display: inline-block;
+    color: rgb(236, 234, 234);
+    position: absolute;
+    left: 0px;
+    top: 340px;
+    width: 80px;
+    background: radial-gradient(transparent,grey);
+    border: 2px solid white;
+    padding: 10px;
+    box-shadow: 3 3 10 20 rgb(248, 248, 248) ;
+    transform: translatex(200px);
+    
+    z-index: 1;
+    border-radius: 20px 0 0 0 ;
+    
+}
+img{
+    border: 4px solid rgb(232, 22, 22);
+    width: 100%;
+    transition: 1s;
+    position: absolute;
+}
+.four div{width: 400px;
+height: 30px;
+margin: 50px auto;
+padding: 10px;
+background: black;
+transition: 0.3s;
+position: relative;
+}
+.four .right::after{
+    content: "";
+    background: transparent;
+    position: absolute;
+    right: 0px;
+    width: 0px;
+    height: 50px;
+    top: 0;
+    transition: 0.3s;
+
+}
+.four .right:hover::after{
+    background: white;
+    width: 420px;
+    transform: translatex(-20);
+}
+ .four .top::after{
+    content: "";
+    background: transparent;
+    position: absolute;
+    width: 420px;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+
+}
+.four .top:hover::after{
+    background: rgb(251, 251, 251);
+    width: 420px;
+    height: 50px;
+ transform: translatey(-30);
+    
+}
+ .four .buttom::after{
+    content: "";
+    background: transparent;
+    position: absolute;
+    width: 420px;
+    height: 0;
+    bottom: 0;
+   right: 0;
+    transition: 0.3s;
+
+}
+.four .buttom:hover::after{
+    background: white;
+    width: 420px;
+    height: 50px;
+ transform: translatey(30);
+    
+}
+.four .left::after{
+    content: "";
+    background: transparent;
+    position: absolute;
+    left: 0px;
+    width: 0px;
+    height: 50px;
+    top: 0;
+    transition: 0.3s;
+
+}
+.four .left:hover::after{
+    background: white;
+    width: 420px;
+    transform: translatex(20);
+}
+.border{
+    background-color: transparent;
+    border: 10px double black;
+    box-shadow: 5 5 10px 2px white;
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    position: relative;
+    transition: 0.5s;
+
+}
+.border:hover{
+    background-color: transparent;
+    border: 10px double black;
+    border-radius: 50%;
+    box-shadow: 5 5 10px 2px white;
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    transform: rotate(180deg) scale(0.5);
+    overflow: hidden;
+}
+.border:hover::after{
+    content: "";
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    background: black;
+    border-radius: 0 50% 50% 0;
+    transform: translatex(20);
+    transform: perspective() rotate(180deg);
+}
+.border:hover::before{
+    content: "";
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    background: black;
+    right: 0;
+    border-radius: 50% 0 0 50%;
+    transform: translatex(-20);
+    transform: perspective() rotate(180deg);
+}
+form{
+    width: 500px;
+    line-height: 1.5px;
+    height: 800px;
+    margin: 100px auto;
+}
+input{border-radius: 5px;
+    height: 30px;
+margin: 5px 5px 5px 30%;}
+
+#button{width: 100%;
+margin: 50px 0 0 0 ;
+border-radius: 20px;}
+
+
+
+
